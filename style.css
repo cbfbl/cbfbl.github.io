@@ -1,0 +1,32 @@
+body {
+    background: radial-gradient(125% 125% at 50% 90%, #000000 40%, #0d1a36 100%);
+    background-color: black;
+}
+.rainbow_text_animated {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    background: linear-gradient(
+        to right,
+        rgb(250, 78, 10),
+        rgb(247, 12, 204),
+        rgb(0, 106, 255),
+        rgb(48, 248, 255),
+        rgb(250, 78, 10)
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: rainbow_animation 5s linear infinite;
+}
+
+@keyframes rainbow_animation {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
