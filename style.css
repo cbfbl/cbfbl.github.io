@@ -1,10 +1,5 @@
 
-.rainbow_text_animated {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
+.rainbow_text {
     background: linear-gradient(
         to right,
         rgb(250, 78, 10),
@@ -48,4 +43,51 @@
     background-color: transparent;
     border: none;
     color: inherit;
+}
+
+.navigation_bar {
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 300px;
+    color: chocolate;
+}
+
+.navigation_item {
+    border: 1px solid;
+    border-color: chocolate;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation_item:hover {
+    color: teal;
+    border-color: teal;
+}
+
+.balex_active {
+    color: green;
+    border-color: green;
+}
+
+.main_text {
+    position: fixed;
+    top: 25%
+}
+
+.my_friends {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.things_I_like {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
 }
