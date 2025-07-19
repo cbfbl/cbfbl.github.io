@@ -1,10 +1,19 @@
-<html>
+<html lang="en">
     <head>
+        <title>Chen web</title>
+        <link rel="icon" type="image/x-icon" sizes="64x64" href="images/64x64_cb_sp_br.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="dark_mode">
-        <h3 class="rainbow_text_animated">Hello World</h3>
-        <button onclick="setTheme()" class="theme_toggle">🌞</button>
+        <nav id=BALEX class="navigation_bar">
+            <div id="about_me" class="navigation_item">About me</div>
+            <div id="things_I_like" class="navigation_item">Things I like</div>
+            <div id="my_friends" class="navigation_item">My friends</div>
+        </nav>
+        <div id="the_main" class="rainbow_text main_text">Hello World</div>
+        <button type="button" onclick="setTheme()" class="theme_toggle">🌞</button>
         <script src="index.js"></script>
     </body>
 </html>
